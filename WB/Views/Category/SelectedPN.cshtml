@@ -1,0 +1,203 @@
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "首页";
+    int count = 0;
+    int count2 = 0;
+    List<string> PN = new List<string>().ToList();
+
+    string under = "_";
+    string fill = "_col";
+
+    TempData["id1"] = @ViewBag.check11;
+
+
+
+}
+<div id="overlay" class="overlay"></div>
+<div id="modal_body">
+
+    <div class="modal" id="selectionModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal header -->
+                <h2 class="h2 align"><b id="reason_Number"></b></h2>
+                <div class="m-header">
+                    <img src="/images/wrong2.jpg" class="wrong">  </img>
+                </div>
+
+                <!-- Modal body -->
+                <div class="inputs" data-toggle="dropdown">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="footer">
+                    <label class="h3">请先换/放盘，然后再扫码！</label><br />
+                    <button id="close_emptybox_popup" style="padding:5px; max-width: 150px;">扫码了</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row row-pad">
+    <div id="Line_name_style" class="col-1" style="min-width: 350px!important">
+        <h2 id="line" class="h2 align">生产线 &emsp;&nbsp;：
+            <b id="line_no" style="color: white;">
+                @if (ViewBag.check11.Contains("3S1"))
+                {
+                    @ViewBag.check11.Replace("FB-", "")
+                    ;
+
+                }
+                else
+                {
+                    @ViewBag.check11
+                }
+                线
+            </b>
+        </h2>
+        <label hidden> @TempData["id1"] = @ViewBag.check11; </label>
+    </div>
+    <br />
+    @foreach (var obj in Model.Take(1))
+    {
+        <div class="col-4 align-content-center part_number" id="top_titles">
+            <h2 class="h2 align">成品料号   &nbsp;：<b id="part_no" style="color: white;">@obj.MaterialNumber</b> </h2>
+        </div>
+    }
+
+    <div class="col-2" style="padding-left: 50px;" id="top_counter">
+        <div id="count" class="h33 box2 inline-block-column">
+
+            <h33><b id="curr_val" style="color: purple;">@ViewBag.check3</b> of <span id="sumAll">@ViewBag.check4</span></h33><p></p>
+            <span id="updateCount" hidden>@ViewBag.update</span>
+
+        </div>
+    </div>
+</div>
+
+<br />
+
+
+<div class="row" style="display:flex;">
+    <div class="col-5 inline-block-column" style="min-width: 550px!important;">
+        <label class="h3">当前零部件 ：</label>
+        <div class="box1 parent inline-block-column">
+            <h3 class="column2 inline-block-column" style="font-size:25px!important;margin-top:5px;"><b id="topUpdate">@ViewBag.check9</b></h3>
+            <p id="top_color" class="circle column1 inline-block-column" style="background: lightblue;"> </p>
+
+        </div>
+    </div>
+    <br /><br /><br />
+    <div class="custom-col inline-block-column">
+        <form method="post" asp-action="Update">
+            <label id="manual_key_in" class="h3" for="addNum" style="align-content:center;">人工补充 &emsp;：</label>
+            <input name="AddManual" rows="2" id="addNum" class="box1" style="margin-left: 0px; font-size: 20px;" onkeyup="stoppedTyping()" />
+            <input name="pn_No" value="@ViewBag.check10" hidden />
+            <button id="AddBtn" type="submit" class="btn btn-primary" value="Submit" style="padding-bottom: 10px; margin-bottom: 20px; text-align:center;" disabled>提交</button>
+        </form>
+    </div>
+</div>
+<br />
+<br />
+
+
+<label class="h4">零部件信息识别：</label>
+<div id="bodlist" class="container">
+
+    @foreach (var obj in Model)
+    {
+
+        <!--<label>@DateTime.Now</label>-->
+        //<label hidden>@ViewBag.check6[count]</label>
+        @if (ViewBag.check7.Contains(obj.ComponentNumber))
+        {
+            PN.Add(obj.ComponentNumber);
+            if (PN.Contains(obj.ComponentNumber))
+            {
+                <div id="first_box" class="box">
+
+                    <div class="parent">
+                        <h3 class="column inline-block-column">料号 - @obj.ComponentNumber </h3>
+                        <l id="@obj.ComponentNumber@under@count@fill" class="circle-comp column1 inline-block-column" style="background: lightblue;"></l>
+
+
+                    </div>
+
+                    <div class="">
+                        <p class="column" style="height: 50px;word-break:break-word; overflow:clip"><b>物料描述 - </b>@obj.ComponentDescription </p>
+
+                        <label class="switch">
+                            <input id="changeKnob" type="checkbox" checked>
+                            <span id="@obj.ComponentNumber@under@count" class="slider round" onclick="sendmsg(event)" checked></span>
+                        </label>
+
+                    </div>
+                </div>
+                count += 1;
+            }
+            else
+            {
+                <div id="first_box" class="box">
+
+                    <div class="parent">
+                        <h3 class="column inline-block-column">料号 - @obj.ComponentNumber </h3>
+                        <l id="@obj.ComponentNumber@under@count2@fill" class="circle-comp column1 inline-block-column" style="background: lightblue;"></l>
+
+
+                    </div>
+
+                    <div class="">
+                        <p class="column" style="height: 50px;word-break:break-word;overflow:clip"><b>物料描述 - </b>@obj.ComponentDescription</p>
+
+                        <label class="switch">
+                            <input id="changeKnob" type="checkbox" checked>
+                            <span id="@obj.ComponentNumber@under@count" class="slider round" onclick="sendmsg(event)" checked></span>
+                        </label>
+
+                    </div>
+                </div>
+                count += 1;
+            }
+
+            //PN.Add(obj.ComponentNumber.ToString()+@under+@count+@fill);
+        }
+        else
+        {
+            <div id="second_box" class="box">
+
+                <div class="parent">
+                    <h3 class="column inline-block-column">料号 - @obj.ComponentNumber </h3>
+                    <l id="@obj.ComponentNumber@fill" class="circle-comp column1 inline-block-column" style="background: lightblue;"></l>
+                </div>
+
+                <div id="knob" class="">
+                    <p class="column" style="height: 50px;word-break:break-word;overflow:clip"><b>物料描述 - </b>@obj.ComponentDescription</p>
+                    <label id="knob" class="switch">
+
+                        <input id="changeKnob" type="checkbox" checked>
+                        <span id="@obj.ComponentNumber" class="slider round" onclick="sendmsg(event)"></span>
+                    </label>
+                </div>
+
+            </div>
+        }
+        //<span id="dup_list">@PN</span>
+
+
+    }
+
+</div>
+<script>
+</script>
+@section Scripts{
+
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}

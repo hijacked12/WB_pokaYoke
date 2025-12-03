@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body onload="Line_Name()">
+</body>
+<div class="wrapper" >
+
+    @*<div>
+    <button type="submit" class="btn btn-primary">Update Database</button>
+    </div>*@
+    <div class="row pt-4">
+        <div class="col-6">
+            <h1 class="display-6 align">物料比对系统</h1>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Home" asp-action="UpdateDb" class="btn btn-primary" style="background-color:crimson">
+                Update Database
+            </a>
+        </div>
+    </div>
+
+    <form method="post" asp-controller="Home" asp-action="SearchResults">
+        <div>
+            <label>搜PN</label>
+            <input class="form-control" name="SearchPhrase" />
+
+            <button type="submit" class="btn btn-primary" value="Search">Search</button>
+        </div>
+    </form>
+
+    <br /><br />
+
+    <div class="container">
+        @foreach (var obj in Model.Take(6))
+        {
+
+            <div class="box">
+
+                <h3>@obj.MaterialNumber</h3>
+                <p>零部件号 - @obj.ComponentNumber</p>
+                <p>物料描述 - @obj.ComponentDescription</p>
+                <form method="post" asp-action="SelectedPN">
+                    <input name="nameobj" value=@obj.MaterialNumber hidden />
+                    <input id="line" name="line"  hidden />
+                    <button asp-controller="Category" asp-action="SelectedPN" class="btn" type="submit">Select</button>
+                </form>
+            </div>
+            @*<div class="box">
+        <img src="~/img/2.jpg" />
+        <h3>@obj.Name</h3>
+        <p>Short details shown here to user</p>
+        <a href="#" class="btn">See Details</a>
+        </div>
+        <div class="box">
+        <img src="~/img/3.jpg" />
+        <h3>Part Number 3</h3>
+        <p>Short details shown here to user</p>
+        <a href="#" class="btn">See Details</a>
+        </div>
+        <div class="box">
+        <img src="~/img/4.jpg"/>
+        <h3>Part Number 4</h3>
+        <p>Short details shown here to user</p>
+        <a href="#" class="btn">See Details</a>
+        </div>
+        <div class="box">
+        <img src="~/img/5.jpg" />
+        <h3>Part Number 5</h3>
+        <p>Short details shown here to user</p>
+        <a href="#" class="btn">See Details</a>
+        </div>
+        <div class="box">
+        <img src="~/img/6.jpg" />
+        <h3>Part Number 6</h3>
+        <p>Short details shown here to user</p>
+        <a href="#" class="btn">See Details</a>
+        </div>*@
+        }
+    </div>
+
+    <br /><br />
+
+</div>
+
+@section Scripts{
+    @{
+
+
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}

@@ -1,0 +1,7 @@
+2023-03-
+   at WB_Api.Repository.UnitOfWork.WB_Api.IRepository.IUnitOfWork.get_Scanner() in C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\Repository\UnitOfWork.cs:line 18
+   at WB_Api.Controllers.ScannerController.GetValues(CreateScannerDTO scannerDTO) in C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\Controllers\ScannerController.cs:line 44
+2023-03-09 16:51:41.480 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-03-09 16:51:41.491 +08:00 [INF] Executed action WB_Api.Controllers.ScannerController.GetValues (WB_Api) in 21021.0379ms
+2023-03-09 16:51:41.496 +08:00 [INF] Executed endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-09 16:51:41.499 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Scanner application/json-patch+json 70 - 500 - text/plain;+charset=utf-8 21085.6518ms

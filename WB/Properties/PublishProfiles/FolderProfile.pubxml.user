@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\OLJ1SGH\Desktop\publish_poka\test pub</_PublishTargetUrl>
+    <History>True|2024-12-25T01:00:21.6270285Z;True|2024-07-04T13:46:28.0043378+08:00;True|2024-07-03T10:34:15.6460893+08:00;True|2024-06-26T14:00:56.0773580+08:00;True|2024-05-23T17:26:18.5314927+08:00;True|2024-05-23T17:13:37.1706056+08:00;True|2024-05-22T14:41:16.6047697+08:00;True|2024-05-22T14:13:42.5890564+08:00;True|2024-05-14T10:25:15.5405759+08:00;True|2024-05-14T09:32:57.3995723+08:00;True|2024-05-14T09:30:09.8386051+08:00;True|2024-04-29T13:07:48.0302357+08:00;True|2024-04-15T08:26:21.7139870+08:00;True|2024-04-12T18:01:11.0952157+08:00;True|2024-04-03T18:09:09.6718554+08:00;True|2024-04-03T08:55:06.0769837+08:00;True|2024-04-03T08:50:17.5688541+08:00;True|2024-04-02T17:04:26.9481762+08:00;True|2024-04-02T16:53:32.1776118+08:00;True|2024-04-02T15:36:32.8465075+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=SHZ4VM0017%3bDatabase=poka_trace%3bUser Id=Poka_Yoke_trace%3bPassword=POKAYOKE2022%3bTrusted_Connection=false%3bMultipleActiveResultSets=true%3bEncrypt=false</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="WB.Areas.Identity.Data.ApplicationDbContext1">
+      <Value>Server=SHZ4VM0017%3bDatabase=poka_trace%3bUser Id=Poka_Yoke_trace%3bPassword=POKAYOKE2022%3bTrusted_Connection=false%3bMultipleActiveResultSets=true%3bEncrypt=false</Value>
+    </EFMigrations>
+    <EFMigrations Include="WB.Data.ApplicationDbContext">
+      <Value>Server=SHZ4VM0017%3bDatabase=poka_trace%3bUser Id=Poka_Yoke_trace%3bPassword=POKAYOKE2022%3bTrusted_Connection=false%3bMultipleActiveResultSets=true%3bEncrypt=false</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

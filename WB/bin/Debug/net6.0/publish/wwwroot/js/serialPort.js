@@ -1,0 +1,8 @@
+﻿/**
+ * Minified by jsDelivr using Terser v5.15.1.
+ * Original file: /npm/serialport@10.5.0/dist/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+"use strict";var __createBinding=this&&this.__createBinding||(Object.create?function(r,e,t,p){void 0===p&&(p=t),Object.defineProperty(r,p,{enumerable:!0,get:function(){return e[t]}})}:function(r,e,t,p){void 0===p&&(p=t),r[p]=e[t]}),__exportStar=this&&this.__exportStar||function(r,e){for(var t in r)"default"===t||Object.prototype.hasOwnProperty.call(e,t)||__createBinding(e,r,t)};Object.defineProperty(exports,"__esModule",{value:!0}),__exportStar(require("@serialport/parser-byte-length"),exports),__exportStar(require("@serialport/parser-cctalk"),exports),__exportStar(require("@serialport/parser-delimiter"),exports),__exportStar(require("@serialport/parser-inter-byte-timeout"),exports),__exportStar(require("@serialport/parser-packet-length"),exports),__exportStar(require("@serialport/parser-readline"),exports),__exportStar(require("@serialport/parser-ready"),exports),__exportStar(require("@serialport/parser-regex"),exports),__exportStar(require("@serialport/parser-slip-encoder"),exports),__exportStar(require("@serialport/parser-spacepacket"),exports),__exportStar(require("./serialport-mock"),exports),__exportStar(require("./serialport"),exports);
+//# sourceMappingURL=/sm/7b89f87092bab26e7cb67fec1d13c7a7962b5ad635bae91c34222d74110bd3f9.map

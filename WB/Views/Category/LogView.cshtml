@@ -1,0 +1,130 @@
+﻿@model SearchLogViewModel
+@{
+    int maxPagesToShow = 5;
+    int startPage = Math.Max(1, Model.PageNumber - 2);
+
+    // Adjust the start and end pages dynamically
+    if (Model.PageNumber > maxPagesToShow / 2)
+    {
+        startPage = Model.PageNumber - 1;
+    }
+
+    int endPage = Math.Min(Model.TotalPages, startPage + maxPagesToShow - 1);
+}
+@* <span>@Model.TotalPages @startPage @endPage</span> *@
+<div class="table-wrapper" style="white-space:nowrap;width:100%">
+    <form asp-controller="Category" asp-action="SearchLogView" method="get">
+        <div class="row" style="color:white!important; font-size:18px;">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="materialNumber">成品料号：</label>
+                    <input type="text" id="materialNumber" name="materialNumber" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="supplier">供应商：</label>
+                    <input type="text" id="supplier" name="supplier" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="line">线名称</label>
+                    <select id="line" name="line" class="form-control">
+                        <option value="None">None</option>
+                        @foreach (var obj in Model.DistinctLines)
+                        {
+                            <option value="@obj">@obj</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="startDate">日期-从：</label>
+                    <input type="date" id="startDate" name="startDate" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="endDate">日期-到：</label>
+                    <input type="date" id="endDate" name="endDate" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="status">状态：</label>
+                    <input type="text" id="status" name="status" class="form-control">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-items:center; width:150px;">Filter</button>
+        <button asp-controller="Category" asp-action="CancelFilter" asp-route-pageNumber="@Model.PageNumber" asp-route-pageSize="@Model.PageSize" class="btn btn-primary" style="align-items:center; width:150px;">Cancel Filters</button>
+    </form>
+</div>
+
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+            <tr>
+                <th>线名称</th>
+                <th>成品物料</th>
+                <th>零件号</th>
+                <th>状态</th>
+                <th>零件生产日期</th>
+                <th>供应商</th>
+                <th>批次号</th>
+                <th>扫描日期</th>
+                <th>扫描时间</th>
+                <th>。。。</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj1 in Model.Logs)
+            {
+                <tr>
+                    <td>@obj1.Line</td>
+                    <td>@obj1.MaterialNumber</td>
+                    <td>@obj1.ComponentNumber</td>
+                    <td>@obj1.Status</td>
+                    <td>@obj1.ProductionDate</td>
+                    <td>@obj1.Supplier</td>
+                    <td>@obj1.BatchNumber</td>
+                    <td>@obj1.ScanDate</td>
+                    <td>@obj1.ScanTime</td>
+                    <td width="14%">
+                        <div class="w-75 btn-group" role="group">
+                            <a asp-controller="Category" asp-action="DeleteLog" asp-route-id="@obj1.Id" class="btn btn-danger mx-2">删除</a>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="center">
+    <div class="pagination">
+        @if (Model != null && Model.PageNumber > 1)
+        {
+            <a asp-action="LogView" asp-route-pageNumber="@(Model.PageNumber - 1)" asp-route-pageSize="@Model.PageSize" asp-route-materialNumber="@Model.MaterialNumber" asp-route-status="@Model.Status" asp-route-supplier="@Model.Supplier" asp-route-line="@Model.Line" asp-route-startDate="@Model.StartDate" asp-route-endDate="@Model.EndDate" class="btn btn-secondary">Previous</a>
+        }
+
+        @if (Model != null)
+        {
+            for (int i = startPage; i <= endPage; i++)
+            {
+                <a asp-action="LogView" asp-route-pageNumber="@i" asp-route-pageSize="@Model.PageSize" asp-route-materialNumber="@Model.MaterialNumber" asp-route-status="@Model.Status" asp-route-supplier="@Model.Supplier" asp-route-line="@Model.Line" asp-route-startDate="@Model.StartDate" asp-route-endDate="@Model.EndDate" class="btn @(i == Model.PageNumber ? "btn-current-page" : "btn-secondary")">@i</a>
+            }
+        }
+
+        @if (Model != null && Model.PageNumber < Model.TotalPages)
+        {
+            <a asp-action="LogView" asp-route-pageNumber="@(Model.PageNumber + 1)" asp-route-pageSize="@Model.PageSize" asp-route-materialNumber="@Model.MaterialNumber" asp-route-status="@Model.Status" asp-route-supplier="@Model.Supplier" asp-route-line="@Model.Line" asp-route-startDate="@Model.StartDate" asp-route-endDate="@Model.EndDate" class="btn btn-secondary">Next</a>
+        }
+    </div>
+</div>
+
+@section Scripts {
+}

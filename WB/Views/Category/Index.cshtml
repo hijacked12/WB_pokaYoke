@@ -1,0 +1,151 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewData["Title"] = "Home Page";
+    var name = "null";
+}
+
+<div id="overlay" class="overlay"></div>
+
+<div id="modal_body">
+
+    <div class="modal" id="selectionModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal header -->
+                <div class="m-header">
+                    <h2 class="myModalLabel"> 选择生产线 </h2>
+                </div>
+
+                <!-- Modal body -->
+                <div class="inputs" data-toggle="dropdown">
+
+                    <!-- Select dropdown -->
+                    <div class="form-group input-group">
+                        <select class="form-control" id="lineDropdown">
+                            <option value="FB2-A"> FB2-A </option>
+                            <option value="FB2-B"> FB2-B </option>
+                            <option value="FB2-C"> FB2-C </option>
+                            <option value="FB2-D"> FB2-D </option>
+                            <option value="FB2-F"> FB2-F </option>
+                            <option value="FB2-E"> FB2-E </option>
+                            <option value="FB3-B"> FB3-B </option>
+                            <option value="FB3-C"> FB3-C </option>
+                            <option value="FB3-D"> FB3-D </option>
+                            <option value="FB3-E"> FB3-E </option>
+                            <option value="FB3-F"> FB3-F </option>
+                            <option value="FB3-A"> FB3-A </option>
+                            <option value="FB-3S1-A"> FB-3S1-A </option>
+                            <option value="FB-3S1-B"> FB-3S1-B </option>
+                            <option value="FB3-A"> Test Line </option>
+                            <!-- Add more options as needed -->
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="footer">
+                    <button id="selectLine" style="padding:5px; max-width: 150px;">提交</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="modal-container" id="modal-opened">
+    <div class="modal-upload">
+
+        <div class="modal__details">
+            <h1 class="modal__title">Data Upload</h1>
+        </div>
+
+        <p class="modal__text">
+            <form asp-action="ImportExcel" enctype="multipart/form-data" method="post">
+                <input type="file" name="file" />
+                
+                <button style="margin-top:15px!important;" class="modal__btn" type="submit">Upload</button>
+            </form>
+        </p>
+
+        
+        <a asp-action="DownloadTemplate" style="color:#fff!important;">
+            Download Template &rarr;
+        </a>
+
+        <p id="closeModal" style="margin-top:15px!important; color:red!important; cursor: pointer;">
+            Close
+        </p>
+
+
+    </div>
+</div>
+
+<div class="wrapper row">
+
+    @*<div>
+    <button type="submit" class="btn btn-primary">Update Database</button>
+    </div>*@
+    <div class="row pt-4">
+        <div class="col">
+            <h1 class="display-6 align">物料比对系统</h1>
+        </div>
+
+        @if (User.IsInRole("Admin"))
+         {
+            <div class="col justify-content-end text-end" >
+                <a class="btn btn-primary" style="background-color:crimson" id="Upload">
+                    导入/更新数据
+                </a>
+            </div>
+         }
+
+    </div>
+
+    <form method="post" asp-controller="Home" asp-action="SearchResults">
+        <div>
+            <label>搜13-位码</label>
+            <input class="form-control" name="SearchPhrase" />
+
+            <button type="submit" class="btn btn-primary" value="Search">搜索</button>
+        </div>
+    </form>
+
+    <br /><br />
+
+    <div class="container2">
+        @foreach (var obj in Model.Take(6))
+        {
+
+            <div class="box">
+
+                <h3>@obj.MaterialNumber</h3>
+                <p>零部件号 - @obj.ComponentNumber</p>
+                <p>物料描述 - @obj.ComponentDescription</p>
+                <form method="post" asp-action="SelectedPN" id="form1" runat="server">
+                    <input id="line_general" name="line_name" type="text" hidden />
+                    <input name="nameobj" value=@obj.MaterialNumber hidden />
+
+                    <button id="select_no" asp-controller="Category" asp-action="SelectedPN" class="btn" type="submit">选取</button>
+                </form>
+            </div>
+        }
+    </div>
+
+    <br /><br />
+
+</div>
+
+
+
+@section Scripts{
+    @{
+
+
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}

@@ -1,0 +1,736 @@
+2023-03-29 08:33:52.883 +08:00 [INF] Application Is Starting
+2023-03-29 08:33:56.172 +08:00 [INF] User profile is available. Using 'C:\Users\OLJ1SGH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-29 08:33:56.850 +08:00 [INF] Now listening on: https://localhost:7252
+2023-03-29 08:33:56.851 +08:00 [INF] Now listening on: http://localhost:5152
+2023-03-29 08:33:56.859 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-29 08:33:56.862 +08:00 [INF] Hosting environment: Development
+2023-03-29 08:33:56.863 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\
+2023-03-29 08:34:02.741 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/ - -
+2023-03-29 08:34:02.859 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:02.926 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:11.284 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__scan__value_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [s]
+SET [s].[scan_value] = @__scan__value_1
+FROM [scanner] AS [s]
+WHERE 0 = 1
+2023-03-29 08:34:11.314 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-29 08:34:11.529 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-29 08:34:11.877 +08:00 [INF] Executed ViewResult - view Index executed in 564.1508ms.
+2023-03-29 08:34:11.892 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 8965.8987ms
+2023-03-29 08:34:11.893 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:11.967 +08:00 [INF] Session started; Key:59e58c07-b134-4019-e28a-8aa09b09f02b, Id:102cf6af-8b32-3217-6c85-5c6b10a268bb
+2023-03-29 08:34:12.120 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/css/site.css?v=0Quh-JjKtOCMsoE-yCne7oQhAClLpmp1tRqDb1Ytll8 - -
+2023-03-29 08:34:12.120 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-03-29 08:34:12.121 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-29 08:34:12.122 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/css/alertify.min.css - -
+2023-03-29 08:34:12.122 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/css/toastr.min.css - -
+2023-03-29 08:34:12.122 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/js/alertify.min.js - -
+2023-03-29 08:34:12.122 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery-validation/dist/jquery.validate.min.js - -
+2023-03-29 08:34:12.123 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/js/site.js?v=D6ak2BR9ql2vhzwZcCem_dAh2hzIPhEztcsJQ2Urwrs - -
+2023-03-29 08:34:12.127 +08:00 [INF] The file /css/site.css was not modified
+2023-03-29 08:34:12.127 +08:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2023-03-29 08:34:12.127 +08:00 [INF] The file /js/alertify.min.js was not modified
+2023-03-29 08:34:12.127 +08:00 [INF] The file /css/alertify.min.css was not modified
+2023-03-29 08:34:12.127 +08:00 [INF] The file /css/toastr.min.css was not modified
+2023-03-29 08:34:12.127 +08:00 [INF] The file /js/site.js was not modified
+2023-03-29 08:34:12.127 +08:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2023-03-29 08:34:12.129 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 7.9789ms
+2023-03-29 08:34:12.129 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 7.0794ms
+2023-03-29 08:34:12.131 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery-validation/dist/jquery.validate.min.js - - - 304 - application/javascript 6.3025ms
+2023-03-29 08:34:12.131 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/js/site.js?v=D6ak2BR9ql2vhzwZcCem_dAh2hzIPhEztcsJQ2Urwrs - - - 304 - application/javascript 5.4977ms
+2023-03-29 08:34:12.132 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/js/alertify.min.js - - - 304 - application/javascript 6.4221ms
+2023-03-29 08:34:12.132 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/css/alertify.min.css - - - 304 - text/css 6.7326ms
+2023-03-29 08:34:12.132 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/css/toastr.min.css - - - 304 - text/css 6.4909ms
+2023-03-29 08:34:12.134 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/css/site.css?v=0Quh-JjKtOCMsoE-yCne7oQhAClLpmp1tRqDb1Ytll8 - - - 304 - text/css 13.9131ms
+2023-03-29 08:34:12.140 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-03-29 08:34:12.146 +08:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2023-03-29 08:34:12.146 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 7.3925ms
+2023-03-29 08:34:12.147 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+2023-03-29 08:34:12.147 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.form.js - -
+2023-03-29 08:34:12.147 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.min.js - -
+2023-03-29 08:34:12.147 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-29 08:34:12.147 +08:00 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2023-03-29 08:34:12.147 +08:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-03-29 08:34:12.147 +08:00 [INF] The file /lib/jquery/dist/jquery.form.js was not modified
+2023-03-29 08:34:12.147 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 304 - application/javascript 0.5401ms
+2023-03-29 08:34:12.147 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 0.5746ms
+2023-03-29 08:34:12.147 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.form.js - - - 304 - application/javascript 0.5742ms
+2023-03-29 08:34:12.162 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/ - - - 200 - text/html;+charset=utf-8 9425.7702ms
+2023-03-29 08:34:12.172 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 25.0169ms
+2023-03-29 08:34:12.715 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-29 08:34:12.804 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.9190ms
+2023-03-29 08:34:12.922 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-29 08:34:12.978 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-29 08:34:12.979 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 57.1070ms
+2023-03-29 08:34:20.876 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/Line_No application/x-www-form-urlencoded;+charset=UTF-8 8
+2023-03-29 08:34:20.877 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/Index application/x-www-form-urlencoded;+charset=UTF-8 8
+2023-03-29 08:34:20.878 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:20.878 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Line_No (WB)'
+2023-03-29 08:34:20.878 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:20.882 +08:00 [INF] Route matched with {action = "Line_No", controller = "Category"}. Executing controller action with signature System.Action Line_No(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:20.902 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:20.902 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/favicon.ico - -
+2023-03-29 08:34:20.903 +08:00 [INF] The file /favicon.ico was not modified
+2023-03-29 08:34:20.903 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/favicon.ico - - - 304 - image/x-icon 0.7807ms
+2023-03-29 08:34:20.915 +08:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-03-29 08:34:20.921 +08:00 [INF] Executed action WB.Controllers.CategoryController.Line_No (WB) in 38.9243ms
+2023-03-29 08:34:20.921 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Line_No (WB)'
+2023-03-29 08:34:20.923 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7252/Category/Line_No application/x-www-form-urlencoded;+charset=UTF-8 8 - 204 0 - 46.8715ms
+2023-03-29 08:34:20.933 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 30.6473ms
+2023-03-29 08:34:20.939 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__scan__value_1='?' (Size = 4000), @__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [s]
+SET [s].[scan_value] = @__scan__value_1
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:20.943 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-29 08:34:20.948 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-29 08:34:20.953 +08:00 [INF] Executed ViewResult - view Index executed in 10.2139ms.
+2023-03-29 08:34:20.953 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 74.3681ms
+2023-03-29 08:34:20.953 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:20.964 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7252/Category/Index application/x-www-form-urlencoded;+charset=UTF-8 8 - 200 - text/html;+charset=utf-8 87.5007ms
+2023-03-29 08:34:21.053 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:21.054 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 1.4654ms
+2023-03-29 08:34:22.050 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:22.052 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 2.6183ms
+2023-03-29 08:34:22.870 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/SelectedPN application/x-www-form-urlencoded 210
+2023-03-29 08:34:22.878 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SelectedPN (WB)'
+2023-03-29 08:34:22.885 +08:00 [INF] Route matched with {action = "SelectedPN", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SelectedPN(System.String) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:23.071 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:23.073 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 1.5981ms
+2023-03-29 08:34:23.207 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nameobj_1='?' (Size = 4000), @__line_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [s]
+SET [s].[pn_no] = @__nameobj_1
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__line_0
+2023-03-29 08:34:23.310 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__nameobj_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+WHERE [c].[MaterialNumber] = @__nameobj_0
+2023-03-29 08:34:23.842 +08:00 [INF] Executing ViewResult, running view SelectedPNUpdate.
+2023-03-29 08:34:24.086 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:24.132 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 45.5439ms
+2023-03-29 08:34:24.416 +08:00 [INF] Executed ViewResult - view SelectedPNUpdate executed in 574.1045ms.
+2023-03-29 08:34:24.416 +08:00 [INF] Executed action WB.Controllers.CategoryController.SelectedPN (WB) in 1530.7941ms
+2023-03-29 08:34:24.416 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SelectedPN (WB)'
+2023-03-29 08:34:24.422 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7252/Category/SelectedPN application/x-www-form-urlencoded 210 - 200 - text/html;+charset=utf-8 1552.0158ms
+2023-03-29 08:34:24.430 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-29 08:34:24.430 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-29 08:34:24.430 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-29 08:34:24.431 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 1.3046ms
+2023-03-29 08:34:24.432 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 2.8912ms
+2023-03-29 08:34:24.460 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.0661ms
+2023-03-29 08:34:24.487 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-29 08:34:24.495 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-29 08:34:24.495 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 7.4516ms
+2023-03-29 08:34:25.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:25.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:25.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:25.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:25.537 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:25.538 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:25.561 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:25.564 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:25.577 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:25.578 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:25.579 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 40.9841ms
+2023-03-29 08:34:25.579 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 41.6025ms
+2023-03-29 08:34:25.579 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:25.579 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:25.581 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 47.1086ms
+2023-03-29 08:34:25.581 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 46.6717ms
+2023-03-29 08:34:26.528 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:26.528 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:26.529 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:26.529 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:26.529 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:26.529 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:26.534 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:26.534 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:26.534 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 5.3025ms
+2023-03-29 08:34:26.534 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:26.536 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 8.5405ms
+2023-03-29 08:34:26.538 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:26.538 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:26.539 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 10.0007ms
+2023-03-29 08:34:26.539 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:26.540 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 12.8060ms
+2023-03-29 08:34:27.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:27.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:27.536 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:27.536 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:27.536 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:27.536 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:27.543 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:27.544 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:27.545 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:27.545 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:27.545 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 8.7052ms
+2023-03-29 08:34:27.545 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:27.545 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 8.5464ms
+2023-03-29 08:34:27.545 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:27.547 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 11.7495ms
+2023-03-29 08:34:27.547 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 11.6005ms
+2023-03-29 08:34:28.529 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:28.529 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:28.529 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:28.529 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:28.529 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:28.529 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:28.534 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:28.536 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:28.536 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:28.536 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:28.536 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 6.683ms
+2023-03-29 08:34:28.536 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:28.536 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 6.7505ms
+2023-03-29 08:34:28.537 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:28.538 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 9.5839ms
+2023-03-29 08:34:28.538 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 9.6126ms
+2023-03-29 08:34:29.539 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:29.539 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:29.539 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:29.540 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:29.540 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:29.540 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:29.547 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:29.549 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:29.549 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:29.549 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:29.550 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 10.0801ms
+2023-03-29 08:34:29.550 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:29.550 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 10.0021ms
+2023-03-29 08:34:29.550 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:29.552 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 13.8647ms
+2023-03-29 08:34:29.552 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 13.3294ms
+2023-03-29 08:34:30.531 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:30.532 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:30.532 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:30.532 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:30.532 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:30.532 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:30.540 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:30.542 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:30.543 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 10.5966ms
+2023-03-29 08:34:30.545 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:30.545 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:30.545 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:30.546 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 13.5404ms
+2023-03-29 08:34:30.546 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:30.548 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 16.7857ms
+2023-03-29 08:34:30.548 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 17.6531ms
+2023-03-29 08:34:31.536 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:31.537 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:31.537 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:31.537 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:31.537 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:31.537 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:31.541 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:31.543 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:31.543 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:31.543 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:31.544 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 6.4795ms
+2023-03-29 08:34:31.544 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 6.1814ms
+2023-03-29 08:34:31.544 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:31.544 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:31.546 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 9.4278ms
+2023-03-29 08:34:31.546 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 9.1041ms
+2023-03-29 08:34:32.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:32.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:32.534 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:32.534 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:32.535 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:32.535 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:32.543 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:32.543 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:32.546 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:32.546 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:32.546 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 11.1162ms
+2023-03-29 08:34:32.546 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 11.2275ms
+2023-03-29 08:34:32.546 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:32.546 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:32.548 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 14.3705ms
+2023-03-29 08:34:32.549 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 15.0167ms
+2023-03-29 08:34:33.541 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:33.541 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:33.542 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:33.542 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:33.542 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:33.542 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:33.550 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:33.550 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:33.552 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:33.552 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:33.552 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 9.7235ms
+2023-03-29 08:34:33.552 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:33.552 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 9.5918ms
+2023-03-29 08:34:33.552 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:33.554 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 12.9359ms
+2023-03-29 08:34:33.554 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 12.9088ms
+2023-03-29 08:34:34.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:34.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:34.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:34.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:34.535 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:34.535 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:34.538 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:34.539 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:34.541 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:34.541 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 6.2688ms
+2023-03-29 08:34:34.541 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:34.541 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:34.542 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 6.8217ms
+2023-03-29 08:34:34.542 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:34.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 9.2970ms
+2023-03-29 08:34:34.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 9.3052ms
+2023-03-29 08:34:35.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:35.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:35.533 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:35.533 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:35.533 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:35.534 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:35.541 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:35.543 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:35.544 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 10.4048ms
+2023-03-29 08:34:35.544 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:35.546 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:35.547 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:35.548 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 14.4804ms
+2023-03-29 08:34:35.548 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 16.0582ms
+2023-03-29 08:34:35.548 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:35.550 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 17.0406ms
+2023-03-29 08:34:36.537 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:36.537 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:36.538 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:36.538 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:36.538 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:36.538 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:36.544 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:36.547 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:36.547 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 9.4277ms
+2023-03-29 08:34:36.547 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:36.548 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:36.549 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:36.550 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 12.6151ms
+2023-03-29 08:34:36.550 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 11.8489ms
+2023-03-29 08:34:36.550 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:36.551 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 14.2137ms
+2023-03-29 08:34:37.526 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:37.526 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:37.527 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:37.527 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:37.527 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:37.527 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:37.531 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:37.534 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:37.534 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:37.534 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:37.534 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 7.3383ms
+2023-03-29 08:34:37.534 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 7.4746ms
+2023-03-29 08:34:37.534 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:37.534 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:37.537 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 10.7154ms
+2023-03-29 08:34:37.537 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 10.7877ms
+2023-03-29 08:34:38.540 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:38.540 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:38.540 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:38.540 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:38.540 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:38.540 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:38.546 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:38.550 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:38.550 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:38.550 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:38.550 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 9.4908ms
+2023-03-29 08:34:38.550 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 9.3974ms
+2023-03-29 08:34:38.550 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:38.550 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:38.553 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 13.0881ms
+2023-03-29 08:34:38.553 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 13.1178ms
+2023-03-29 08:34:39.527 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:39.527 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:39.527 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:39.527 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:39.527 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:39.527 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:39.530 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:39.532 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:39.532 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:39.532 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:39.532 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 5.2544ms
+2023-03-29 08:34:39.532 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:39.532 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 5.3373ms
+2023-03-29 08:34:39.533 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:39.534 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 7.6779ms
+2023-03-29 08:34:39.534 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 7.8912ms
+2023-03-29 08:34:40.525 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:40.525 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:40.526 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:40.526 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:40.526 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:40.526 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:40.529 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:40.530 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:40.532 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:40.532 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 5.9133ms
+2023-03-29 08:34:40.532 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:40.532 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:40.532 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 6.6653ms
+2023-03-29 08:34:40.533 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:40.533 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 8.3877ms
+2023-03-29 08:34:40.534 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 9.0763ms
+2023-03-29 08:34:41.030 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/ - -
+2023-03-29 08:34:41.031 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:41.032 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:41.038 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__scan__value_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [s]
+SET [s].[scan_value] = @__scan__value_1
+FROM [scanner] AS [s]
+WHERE 0 = 1
+2023-03-29 08:34:41.038 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-29 08:34:41.041 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-29 08:34:41.053 +08:00 [INF] Executed ViewResult - view Index executed in 15.0537ms.
+2023-03-29 08:34:41.053 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 21.7403ms
+2023-03-29 08:34:41.053 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:41.061 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/ - - - 200 - text/html;+charset=utf-8 30.5787ms
+2023-03-29 08:34:41.070 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-29 08:34:41.070 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-29 08:34:41.071 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-29 08:34:41.071 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 0.8852ms
+2023-03-29 08:34:41.078 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 4.5893ms
+2023-03-29 08:34:41.109 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.3310ms
+2023-03-29 08:34:41.110 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-29 08:34:41.117 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-29 08:34:41.117 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 7.3026ms
+2023-03-29 08:34:53.794 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/Line_No application/x-www-form-urlencoded;+charset=UTF-8 8
+2023-03-29 08:34:53.795 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/Index application/x-www-form-urlencoded;+charset=UTF-8 8
+2023-03-29 08:34:53.796 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Line_No (WB)'
+2023-03-29 08:34:53.796 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:53.796 +08:00 [INF] Route matched with {action = "Line_No", controller = "Category"}. Executing controller action with signature System.Action Line_No(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:53.796 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:53.796 +08:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-03-29 08:34:53.797 +08:00 [INF] Executed action WB.Controllers.CategoryController.Line_No (WB) in 0.913ms
+2023-03-29 08:34:53.797 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Line_No (WB)'
+2023-03-29 08:34:53.798 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7252/Category/Line_No application/x-www-form-urlencoded;+charset=UTF-8 8 - 204 0 - 4.1521ms
+2023-03-29 08:34:53.802 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__scan__value_1='?' (Size = 4000), @__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [s]
+SET [s].[scan_value] = @__scan__value_1
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:53.803 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-29 08:34:53.807 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-29 08:34:53.809 +08:00 [INF] Executed ViewResult - view Index executed in 5.95ms.
+2023-03-29 08:34:53.809 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 12.8774ms
+2023-03-29 08:34:53.809 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-29 08:34:53.813 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:53.819 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 6.1173ms
+2023-03-29 08:34:53.822 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7252/Category/Index application/x-www-form-urlencoded;+charset=UTF-8 8 - 200 - text/html;+charset=utf-8 26.2583ms
+2023-03-29 08:34:54.146 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:54.148 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 1.7637ms
+2023-03-29 08:34:55.151 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/GetCurrent - -
+2023-03-29 08:34:55.153 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/GetCurrent - - - 404 0 - 1.9089ms
+2023-03-29 08:34:55.371 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/SelectedPN application/x-www-form-urlencoded 210
+2023-03-29 08:34:55.372 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SelectedPN (WB)'
+2023-03-29 08:34:55.372 +08:00 [INF] Route matched with {action = "SelectedPN", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SelectedPN(System.String) on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:55.376 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__nameobj_1='?' (Size = 4000), @__line_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+UPDATE [s]
+SET [s].[pn_no] = @__nameobj_1
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__line_0
+2023-03-29 08:34:55.380 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__nameobj_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+WHERE [c].[MaterialNumber] = @__nameobj_0
+2023-03-29 08:34:55.384 +08:00 [INF] Executing ViewResult, running view SelectedPNUpdate.
+2023-03-29 08:34:55.394 +08:00 [INF] Executed ViewResult - view SelectedPNUpdate executed in 10.7804ms.
+2023-03-29 08:34:55.394 +08:00 [INF] Executed action WB.Controllers.CategoryController.SelectedPN (WB) in 22.0074ms
+2023-03-29 08:34:55.394 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SelectedPN (WB)'
+2023-03-29 08:34:55.401 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7252/Category/SelectedPN application/x-www-form-urlencoded 210 - 200 - text/html;+charset=utf-8 30.5219ms
+2023-03-29 08:34:55.409 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-29 08:34:55.409 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-29 08:34:55.409 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-29 08:34:55.409 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 0.4632ms
+2023-03-29 08:34:55.414 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 5.2097ms
+2023-03-29 08:34:55.468 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-29 08:34:55.493 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 84.3147ms
+2023-03-29 08:34:55.495 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-29 08:34:55.495 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 26.5331ms
+2023-03-29 08:34:56.546 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:56.546 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:56.547 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:56.547 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:56.547 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:56.547 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:56.554 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:56.558 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:56.558 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:56.558 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:56.558 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 11.4642ms
+2023-03-29 08:34:56.559 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 11.5441ms
+2023-03-29 08:34:56.559 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:56.559 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:56.561 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 15.2635ms
+2023-03-29 08:34:56.561 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 15.2872ms
+2023-03-29 08:34:57.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:57.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:57.536 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:57.536 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:57.536 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:57.536 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:57.544 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:57.546 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:57.548 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:57.549 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:57.549 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 12.6515ms
+2023-03-29 08:34:57.549 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 12.6459ms
+2023-03-29 08:34:57.549 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:57.549 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:57.552 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 17.7734ms
+2023-03-29 08:34:57.552 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 17.6169ms
+2023-03-29 08:34:58.539 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:58.540 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:58.540 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:58.540 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:58.540 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:58.540 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:58.544 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:58.545 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:58.548 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:58.548 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 7.5685ms
+2023-03-29 08:34:58.548 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:58.548 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:58.549 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 8.4676ms
+2023-03-29 08:34:58.549 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:58.551 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 11.2136ms
+2023-03-29 08:34:58.551 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 11.0477ms
+2023-03-29 08:34:59.543 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:34:59.543 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:34:59.543 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:59.543 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:59.544 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:59.544 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:34:59.552 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:34:59.553 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:34:59.553 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:59.553 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:34:59.553 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 9.1353ms
+2023-03-29 08:34:59.553 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:34:59.553 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 9.4216ms
+2023-03-29 08:34:59.554 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:34:59.556 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 13.2478ms
+2023-03-29 08:34:59.556 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 13.6054ms
+2023-03-29 08:35:00.546 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:35:00.546 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:35:00.546 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:00.546 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:00.546 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:00.546 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:00.551 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:35:00.552 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:35:00.552 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:00.552 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:00.552 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 5.8406ms
+2023-03-29 08:35:00.552 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 5.9024ms
+2023-03-29 08:35:00.552 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:00.552 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:00.554 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 8.4326ms
+2023-03-29 08:35:00.554 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 8.1311ms
+2023-03-29 08:35:01.531 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:35:01.532 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:01.532 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:35:01.532 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:01.532 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:01.532 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:01.556 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:35:01.557 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:01.557 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 25.029ms
+2023-03-29 08:35:01.557 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:01.560 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:35:01.560 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:01.561 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 29.0563ms
+2023-03-29 08:35:01.561 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:01.563 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 31.6088ms
+2023-03-29 08:35:01.563 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 30.9758ms
+2023-03-29 08:35:02.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:35:02.534 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:35:02.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:02.535 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:02.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:02.535 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:02.541 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:35:02.544 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:35:02.544 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:02.544 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:02.544 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 9.0609ms
+2023-03-29 08:35:02.544 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 8.8925ms
+2023-03-29 08:35:02.544 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:02.544 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:02.547 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 13.3952ms
+2023-03-29 08:35:02.547 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 12.7934ms
+2023-03-29 08:35:03.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/GetCurrent - -
+2023-03-29 08:35:03.535 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/Category/SendResult - -
+2023-03-29 08:35:03.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:03.535 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:03.535 +08:00 [INF] Route matched with {action = "GetCurrent", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCurrent() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:03.535 +08:00 [INF] Route matched with {action = "SendResult", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SendResult() on controller WB.Controllers.CategoryController (WB).
+2023-03-29 08:35:03.539 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[state]
+FROM [change_state] AS [c]
+WHERE [c].[id] = @__id_0
+2023-03-29 08:35:03.541 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id], [s].[ScannerDTOid], [s].[pn_no], [s].[scan_value]
+FROM [scanner] AS [s]
+WHERE [s].[id] = @__id_0
+2023-03-29 08:35:03.541 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:03.541 +08:00 [INF] Executing JsonResult, writing value of type 'System.String'.
+2023-03-29 08:35:03.541 +08:00 [INF] Executed action WB.Controllers.CategoryController.SendResult (WB) in 5.7687ms
+2023-03-29 08:35:03.541 +08:00 [INF] Executed action WB.Controllers.CategoryController.GetCurrent (WB) in 5.8195ms
+2023-03-29 08:35:03.541 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.SendResult (WB)'
+2023-03-29 08:35:03.541 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.GetCurrent (WB)'
+2023-03-29 08:35:03.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/GetCurrent - - - 200 - application/json;+charset=utf-8 8.6420ms
+2023-03-29 08:35:03.543 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/Category/SendResult - - - 200 - application/json;+charset=utf-8 8.4230ms

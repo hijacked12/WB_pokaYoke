@@ -1,0 +1,73 @@
+﻿@model ScanLog
+@{
+    ViewData["Title"] = "删除日志";
+}
+
+<form method="post" asp-action="DeleteLog">
+    <input asp-for="Id" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <div class="text-dark"> <b style="font-size:25px;"> 删除料号 </b> </div>
+            <hr />
+        </div>
+        @*<div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="Line"> <b> 线名称</b> </label>
+            <input asp-for="Line" class="form-control" />
+            <span asp-validation-for="Line" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="MaterialNumber"> <b> 成品料号 </b> </label>
+            <input asp-for="MaterialNumber" class="form-control" />
+            <span asp-validation-for="MaterialNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ComponentNumber"> <b> 零件号 </b> </label>
+            <input asp-for="ComponentNumber" class="form-control" />
+            <span asp-validation-for="ComponentNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Status"> <b> 状态</b> </label>
+            <input asp-for="Status" class="form-control" />
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ProductionDate"> <b> 零件生产日期 </b> </label>
+            <input asp-for="ProductionDate" class="form-control" />
+            <span asp-validation-for="ProductionDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Supplier"> <b> 供应商 </b> </label>
+            <input asp-for="Supplier" class="form-control" />
+            <span asp-validation-for="Supplier" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="BatchNumber"> <b> 批次号 </b> </label>
+            <input asp-for="BatchNumber" class="form-control" />
+            <span asp-validation-for="BatchNumber" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ScanTime"> <b> 扫描时间 </b> </label>
+            <input asp-for="ScanTime" class="form-control" />
+            <span asp-validation-for="ScanTime" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ScanDate"> <b> 扫描日期 </b> </label>
+            <input asp-for="ScanDate" class="form-control" />
+            <span asp-validation-for="ScanDate" class="text-danger"></span>
+        </div>
+
+
+
+        <button type="submit" class="btn btn-danger btn-primary">删除</button>
+        <a asp-controller="Category" asp-action="LogView" class="btn btn-secondary">
+            返回
+        </a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}

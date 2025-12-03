@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Category>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="wrapper">
+    <h1 class="display-6 align" >物料比对系统</h1>
+
+    <form method="post" asp-action="SearchResults">
+        <div>
+            <label >搜PN</label>
+            <input class="form-control" name="SearchPhrase" />
+            
+            <button type="submit" class="btn btn-primary" value="Search">Search</button>
+        </div>
+    </form>
+
+    <br /><br />
+
+    <div class="container" asp-controller="Category" asp-action="SelectedPN" for="clickid">
+        @foreach (var obj in Model)
+        {
+        <div class="box">
+            
+            <h3>@obj.MaterialNumber</h3>
+            <p>Display Order - @obj.ComponentNumber</p>
+            <p>Date Created - @obj.ComponentDescription</p>
+                <form method="post" asp-controller="Category" asp-action="SelectedPN">
+                    <input name="nameobj" value=@obj.MaterialNumber.ToString() hidden />
+                    <button itemid="clickid" asp-controller="Category" asp-action="SelectedPN" class="btn" type="submit">Select</button>
+                </form>
+        </div>
+        @*<div class="box">
+            <img src="~/img/2.jpg" />
+            <h3>@obj.Name</h3>
+            <p>Short details shown here to user</p>
+            <a href="#" class="btn">See Details</a>
+        </div>
+        *@
+}
+    </div>
+
+    <br /><br />
+    
+</div>

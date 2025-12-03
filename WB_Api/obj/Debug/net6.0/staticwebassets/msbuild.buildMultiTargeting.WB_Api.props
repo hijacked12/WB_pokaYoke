@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WB_Api.props" />
+</Project>

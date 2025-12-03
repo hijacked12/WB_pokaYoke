@@ -1,0 +1,268 @@
+2023-03-07 11:55:02.107 +08:00 [INF] Application Is Starting
+2023-03-07 11:55:03.813 +08:00 [INF] Now listening on: https://localhost:7265
+2023-03-07 11:55:03.820 +08:00 [INF] Now listening on: http://localhost:5211
+2023-03-07 11:55:03.833 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 11:55:03.836 +08:00 [INF] Hosting environment: Development
+2023-03-07 11:55:03.839 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\
+2023-03-07 11:55:08.067 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger - -
+2023-03-07 11:55:08.397 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger - - - 301 0 - 340.3884ms
+2023-03-07 11:55:08.438 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - -
+2023-03-07 11:55:08.972 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - - - 200 - text/html;charset=utf-8 534.0313ms
+2023-03-07 11:55:09.532 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/swagger-ui-standalone-preset.js - -
+2023-03-07 11:55:09.532 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 11:55:09.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/swagger-ui-bundle.js - -
+2023-03-07 11:55:09.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/swagger-ui.css - -
+2023-03-07 11:55:09.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - -
+2023-03-07 11:55:09.552 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 19.3983ms
+2023-03-07 11:55:09.652 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-03-07 11:55:09.652 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-03-07 11:55:09.659 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/swagger-ui.css - - - 200 143632 text/css 125.9474ms
+2023-03-07 11:55:09.659 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 127.0469ms
+2023-03-07 11:55:09.668 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-03-07 11:55:09.682 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 148.8381ms
+2023-03-07 11:55:09.686 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 152.0171ms
+2023-03-07 11:55:10.162 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - -
+2023-03-07 11:55:10.265 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/favicon-32x32.png - -
+2023-03-07 11:55:10.267 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-03-07 11:55:10.267 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/favicon-32x32.png - - - 200 628 image/png 1.7126ms
+2023-03-07 11:55:10.520 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 357.8586ms
+2023-03-07 11:55:21.588 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/WeatherForecast - -
+2023-03-07 11:55:21.598 +08:00 [INF] Executing endpoint 'WB_Api.Controllers.WeatherForecastController.Get (WB_Api)'
+2023-03-07 11:55:21.616 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[WB_Api.WeatherForecast] Get() on controller WB_Api.Controllers.WeatherForecastController (WB_Api).
+2023-03-07 11:55:21.626 +08:00 [INF] Executing ObjectResult, writing value of type 'WB_Api.WeatherForecast[]'.
+2023-03-07 11:55:21.647 +08:00 [INF] Executed action WB_Api.Controllers.WeatherForecastController.Get (WB_Api) in 22.7631ms
+2023-03-07 11:55:21.650 +08:00 [INF] Executed endpoint 'WB_Api.Controllers.WeatherForecastController.Get (WB_Api)'
+2023-03-07 11:55:21.650 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/WeatherForecast - - - 200 - application/json;+charset=utf-8 62.3551ms
+2023-03-07 11:57:34.446 +08:00 [INF] Application Is Starting
+2023-03-07 11:57:36.022 +08:00 [INF] Now listening on: https://localhost:7265
+2023-03-07 11:57:36.034 +08:00 [INF] Now listening on: http://localhost:5211
+2023-03-07 11:57:36.059 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 11:57:36.064 +08:00 [INF] Hosting environment: Development
+2023-03-07 11:57:36.068 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\
+2023-03-07 11:57:39.050 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - -
+2023-03-07 11:57:39.882 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - - - 200 - text/html;charset=utf-8 843.4480ms
+2023-03-07 11:57:40.583 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - -
+2023-03-07 11:57:40.588 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 11:57:40.611 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 22.6214ms
+2023-03-07 11:57:40.813 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 230.0473ms
+2023-03-07 11:57:41.124 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - -
+2023-03-07 11:57:41.439 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 314.6705ms
+2023-03-07 11:57:46.212 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/WeatherForecast - -
+2023-03-07 11:57:46.221 +08:00 [INF] Executing endpoint 'WB_Api.Controllers.WeatherForecastController.Get (WB_Api)'
+2023-03-07 11:57:46.233 +08:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[WB_Api.WeatherForecast] Get() on controller WB_Api.Controllers.WeatherForecastController (WB_Api).
+2023-03-07 11:57:46.240 +08:00 [INF] Accessed Weather Forecast
+2023-03-07 11:57:46.250 +08:00 [INF] Executing ObjectResult, writing value of type 'WB_Api.WeatherForecast[]'.
+2023-03-07 11:57:46.272 +08:00 [INF] Executed action WB_Api.Controllers.WeatherForecastController.Get (WB_Api) in 29.4251ms
+2023-03-07 11:57:46.274 +08:00 [INF] Executed endpoint 'WB_Api.Controllers.WeatherForecastController.Get (WB_Api)'
+2023-03-07 11:57:46.274 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/WeatherForecast - - - 200 - application/json;+charset=utf-8 62.4746ms
+2023-03-07 13:32:35.103 +08:00 [INF] Application Is Starting
+2023-03-07 13:35:04.996 +08:00 [INF] Application Is Starting
+2023-03-07 13:36:17.171 +08:00 [INF] Application Is Starting
+2023-03-07 13:37:38.350 +08:00 [INF] Application Is Starting
+2023-03-07 13:38:57.015 +08:00 [INF] Application Is Starting
+2023-03-07 13:39:54.327 +08:00 [INF] Application Is Starting
+2023-03-07 13:41:33.253 +08:00 [INF] Application Is Starting
+2023-03-07 13:41:34.593 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:41:34.621 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:41:34.624 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:41:34.625 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:41:34.650 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-07 13:41:34.671 +08:00 [INF] Applying migration '20230307053955_InitialCreate'.
+2023-03-07 13:41:34.722 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [scanners] (
+    [id] int NOT NULL IDENTITY,
+    [scan_value] nvarchar(max) NOT NULL,
+    [pn_no] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_scanners] PRIMARY KEY ([id])
+);
+2023-03-07 13:41:34.725 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230307053955_InitialCreate', N'8.0.0-preview.1.23111.4');
+2023-03-07 13:42:34.251 +08:00 [INF] Application Is Starting
+2023-03-07 13:42:35.275 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:42:35.302 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:42:35.316 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-07 13:42:35.320 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:42:35.320 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:42:35.321 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:42:35.321 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:42:35.322 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-07 13:42:35.333 +08:00 [INF] Reverting migration '20230307053955_InitialCreate'.
+2023-03-07 13:42:35.357 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [scanners];
+2023-03-07 13:42:35.360 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20230307053955_InitialCreate';
+2023-03-07 13:43:09.507 +08:00 [INF] Application Is Starting
+2023-03-07 13:43:22.937 +08:00 [INF] Application Is Starting
+2023-03-07 13:43:23.848 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:43:23.870 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:43:23.873 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:43:23.873 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:43:23.891 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-07 13:43:23.906 +08:00 [INF] Applying migration '20230307054310_InitialCreate'.
+2023-03-07 13:43:23.964 +08:00 [ERR] Failed executing DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [scanner] (
+    [id] int NOT NULL IDENTITY,
+    [scan_value] nvarchar(max) NOT NULL,
+    [pn_no] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_scanner] PRIMARY KEY ([id])
+);
+2023-03-07 13:47:36.764 +08:00 [INF] Application Is Starting
+2023-03-07 13:47:37.599 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:47:37.622 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:47:37.626 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-03-07 13:47:37.627 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-03-07 13:47:37.649 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-03-07 13:47:37.664 +08:00 [INF] Applying migration '20230307054310_InitialCreate'.
+2023-03-07 13:47:37.705 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [scanner] (
+    [id] int NOT NULL IDENTITY,
+    [scan_value] char(15) NULL,
+    [pn_no] char(15) NULL,
+    CONSTRAINT [PK_scanner] PRIMARY KEY ([id])
+);
+2023-03-07 13:47:37.707 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230307054310_InitialCreate', N'8.0.0-preview.1.23111.4');
+2023-03-07 16:50:15.564 +08:00 [INF] Application Is Starting
+2023-03-07 16:50:21.926 +08:00 [INF] Now listening on: https://localhost:7265
+2023-03-07 16:50:21.944 +08:00 [INF] Now listening on: http://localhost:5211
+2023-03-07 16:50:21.981 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 16:50:21.992 +08:00 [INF] Hosting environment: Development
+2023-03-07 16:50:21.997 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\
+2023-03-07 16:50:29.133 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - -
+2023-03-07 16:50:30.868 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - - - 200 - text/html;charset=utf-8 1742.6624ms
+2023-03-07 16:50:31.514 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 16:50:31.540 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 26.1749ms
+2023-03-07 16:50:32.081 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - -
+2023-03-07 16:50:32.225 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 143.9520ms
+2023-03-07 16:50:32.344 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - -
+2023-03-07 16:50:32.753 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 409.4932ms
+2023-03-07 16:50:56.881 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/api/Scanner - -
+2023-03-07 16:50:56.903 +08:00 [INF] Executing endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-07 16:50:56.995 +08:00 [INF] Route matched with {action = "GetValues", controller = "Scanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetValues() on controller WB_Api.Controllers.ScannerController (WB_Api).
+2023-03-07 16:50:57.151 +08:00 [INF] Executed action WB_Api.Controllers.ScannerController.GetValues (WB_Api) in 140.3383ms
+2023-03-07 16:50:57.221 +08:00 [INF] Executed endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-07 16:50:57.728 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'WB_Api.IRepository.IUnitOfWork' while attempting to activate 'WB_Api.Controllers.ScannerController'.
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-07 16:50:57.740 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/api/Scanner - - - 500 - text/plain;+charset=utf-8 858.4820ms
+2023-03-07 16:55:01.344 +08:00 [INF] Application Is Starting
+2023-03-07 16:55:02.808 +08:00 [INF] Now listening on: https://localhost:7265
+2023-03-07 16:55:02.812 +08:00 [INF] Now listening on: http://localhost:5211
+2023-03-07 16:55:02.823 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 16:55:02.827 +08:00 [INF] Hosting environment: Development
+2023-03-07 16:55:02.829 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\
+2023-03-07 16:55:05.707 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - -
+2023-03-07 16:55:06.380 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - - - 200 - text/html;charset=utf-8 678.7958ms
+2023-03-07 16:55:06.738 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - -
+2023-03-07 16:55:06.738 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 16:55:06.751 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 12.8742ms
+2023-03-07 16:55:06.830 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 92.0550ms
+2023-03-07 16:55:06.888 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - -
+2023-03-07 16:55:07.077 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 188.4453ms
+2023-03-07 16:57:02.387 +08:00 [INF] Application Is Starting
+2023-03-07 16:57:05.385 +08:00 [INF] Now listening on: https://localhost:7265
+2023-03-07 16:57:05.395 +08:00 [INF] Now listening on: http://localhost:5211
+2023-03-07 16:57:05.565 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 16:57:05.573 +08:00 [INF] Hosting environment: Development
+2023-03-07 16:57:05.577 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\
+2023-03-07 16:57:09.057 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - -
+2023-03-07 16:57:11.029 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 16:57:11.032 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - -
+2023-03-07 16:57:11.034 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - - - 200 - text/html;charset=utf-8 1991.2165ms
+2023-03-07 16:57:11.085 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 55.4794ms
+2023-03-07 16:57:11.170 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 138.5692ms
+2023-03-07 16:57:11.271 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - -
+2023-03-07 16:57:11.594 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 323.4054ms
+2023-03-07 16:58:21.847 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7265/api/Scanner - -
+2023-03-07 16:58:21.857 +08:00 [INF] Executing endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-07 16:58:21.894 +08:00 [INF] Route matched with {action = "GetValues", controller = "Scanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetValues() on controller WB_Api.Controllers.ScannerController (WB_Api).
+2023-03-07 16:58:22.420 +08:00 [INF] Executed action WB_Api.Controllers.ScannerController.GetValues (WB_Api) in 519.3071ms
+2023-03-07 16:58:22.468 +08:00 [INF] Executed endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-07 16:58:22.673 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'WB_Api.Controllers.ScannerController'.
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-03-07 16:58:22.721 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7265/api/Scanner - - - 500 - text/plain;+charset=utf-8 874.1126ms
+2023-03-07 17:04:51.079 +08:00 [INF] Application Is Starting
+2023-03-07 17:04:53.524 +08:00 [INF] Now listening on: https://localhost:7265
+2023-03-07 17:04:53.534 +08:00 [INF] Now listening on: http://localhost:5211
+2023-03-07 17:04:53.554 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 17:04:53.559 +08:00 [INF] Hosting environment: Development
+2023-03-07 17:04:53.561 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB_Api\
+2023-03-07 17:04:57.082 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - -
+2023-03-07 17:04:58.061 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - - - 200 - text/html;charset=utf-8 987.7564ms
+2023-03-07 17:04:58.650 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - -
+2023-03-07 17:04:58.650 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 17:04:58.667 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - - - 200 11982 application/javascript;+charset=utf-8 17.3827ms
+2023-03-07 17:04:58.744 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 94.1295ms
+2023-03-07 17:04:58.892 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - -
+2023-03-07 17:04:59.146 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 254.0275ms
+2023-03-07 17:05:02.950 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7265/api/Scanner - -
+2023-03-07 17:05:02.977 +08:00 [INF] Executing endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-07 17:05:03.084 +08:00 [INF] Route matched with {action = "GetValues", controller = "Scanner"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetValues() on controller WB_Api.Controllers.ScannerController (WB_Api).
+2023-03-07 17:05:04.171 +08:00 [ERR] Something Went Wrong in the GetValues
+2023-03-07 17:05:04.199 +08:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2023-03-07 17:05:04.257 +08:00 [INF] Executed action WB_Api.Controllers.ScannerController.GetValues (WB_Api) in 1156.5711ms
+2023-03-07 17:05:04.263 +08:00 [INF] Executed endpoint 'WB_Api.Controllers.ScannerController.GetValues (WB_Api)'
+2023-03-07 17:05:04.279 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7265/api/Scanner - - - 500 - text/plain;+charset=utf-8 1329.0208ms

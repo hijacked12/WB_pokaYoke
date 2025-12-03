@@ -1,0 +1,105 @@
+﻿@model SearchLogViewModel
+@{
+    ViewData["Title"] = "List";
+    int maxPagesToShow = 5;
+    int startPage = Math.Max(1, Model.PageNumber - 2);
+    // Adjust the start and end pages dynamically
+    if (Model.PageNumber > maxPagesToShow / 2)
+    {
+        startPage = Model.PageNumber - 1;
+    }
+
+    int endPage = Math.Min(Model.TotalPages, startPage + maxPagesToShow - 1);
+}
+
+<div class="row pt-4">
+    <div class="col-6">
+        <h2 style="text-align:left">材料单</h2>
+    </div>
+    <div class="col-6 text-end" style="padding-bottom:10px">
+        <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
+            输入新料号
+        </a>
+    </div>
+</div>
+<br />
+
+<div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+            <tr>
+                <th> 成品料号 </th>
+                <th> 零件号 </th>
+                <th> 零件描述 </th>
+                <th> 数量 </th>
+                <th> 变化号 </th>
+                <th>。。。</th>
+                <th>。。。</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (Model != null)
+            {
+                @foreach (var obj in Model.List)
+                {
+                        <tr>
+                            <td>
+                                @obj.MaterialNumber
+                            </td>
+                            <td>
+                                @obj.ComponentNumber
+                            </td>
+                            <td width="40%" style="word-break:break-word;">
+                                @obj.ComponentDescription
+                            </td>
+                            <td>
+                                @obj.Quantity
+                            </td>
+                            <td>
+                                @obj.ChangeNumber
+                            </td>
+                            <td width="10%">
+                                <div class="w-75 btn-group" role="group">
+                                    <a asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id"
+                                       class="btn btn-primary mx-2">编辑</a>
+                                </div>
+                            </td>
+                            <td width="10%">
+                                <div class="w-75 btn-group" role="group">
+                                    <a asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id"
+                                       class="btn btn-danger mx-2">删除</a>
+                                </div>
+                            </td>
+                        </tr>
+                
+                }
+            }
+        </tbody>
+
+    </table>
+
+</div>
+
+<div class="center">
+    <div class="pagination">
+        @if (Model != null && Model.PageNumber > 1)
+        {
+            <a asp-action="List_Table" asp-route-pageNumber="@(Model.PageNumber - 1)" asp-route-pageSize="@Model.PageSize" class="btn btn-secondary">Previous</a>
+        }
+
+        @if (Model != null)
+        {
+            for (int i = startPage; i <= endPage; i++)
+            {
+                <a asp-action="List_Table" asp-route-pageNumber="@i" asp-route-pageSize="@Model.PageSize" class="btn @(i == Model.PageNumber ? "btn-current-page" : "btn-secondary")">@i</a>
+            }
+        }
+
+        @if (Model != null && Model.PageNumber < Model.TotalPages)
+        {
+            <a asp-action="List_Table" asp-route-pageNumber="@(Model.PageNumber + 1)" asp-route-pageSize="@Model.PageSize" class="btn btn-secondary">Next</a>
+        }
+    </div>
+</div>
+

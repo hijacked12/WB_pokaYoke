@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using WB.Areas.Identity.Data
+
+@inject SignInManager<WBUser> SignInManager
+@inject UserManager<WBUser> UserManager
+
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+    <ul class="navbar-nav flex-grow-1">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            var name = this.UserManager.GetUserAsync(User);
+            var fn = name.Result.FirstName;
+            <li class="nav-item" style="margin-top:5px;">
+                <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" style""><b>@fn</b> </a>
+            </li>
+            <li class="nav-item" @*style="padding-right:5px!important; padding-top:5px!important; width:100px;"*@>
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout">
+                    <button id="logout" type="submit" class="nav-link btn btn-link text-light" style="height:30px!important; margin:10px!important; width:60px;padding:2px;">退出</button>
+                </form>
+            </li>
+        }
+        else
+        {
+
+        }
+    </ul>
+</div>

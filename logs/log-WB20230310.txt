@@ -1,0 +1,87 @@
+2023-03-10 10:51:36.320 +08:00 [INF] Application Is Starting
+2023-03-10 10:51:38.585 +08:00 [INF] User profile is available. Using 'C:\Users\OLJ1SGH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-10 10:51:39.402 +08:00 [INF] Now listening on: https://localhost:7252
+2023-03-10 10:51:39.404 +08:00 [INF] Now listening on: http://localhost:5152
+2023-03-10 10:51:39.430 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-10 10:51:39.436 +08:00 [INF] Hosting environment: Development
+2023-03-10 10:51:39.438 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\
+2023-03-10 10:51:47.042 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/ - -
+2023-03-10 10:51:47.352 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-10 10:51:47.545 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WB.Controllers.CategoryController (WB).
+2023-03-10 10:51:50.186 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-10 10:51:54.781 +08:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-10 10:51:55.317 +08:00 [INF] Executed ViewResult - view Index executed in 5155.8818ms.
+2023-03-10 10:51:55.338 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 7787.8882ms
+2023-03-10 10:51:55.339 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-10 10:51:55.454 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/css/toastr.min.css - -
+2023-03-10 10:51:55.454 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/css/site.css?v=0Quh-JjKtOCMsoE-yCne7oQhAClLpmp1tRqDb1Ytll8 - -
+2023-03-10 10:51:55.454 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-10 10:51:55.457 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-03-10 10:51:55.469 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/css/alertify.min.css - -
+2023-03-10 10:51:55.479 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-10 10:51:55.493 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/js/alertify.min.js - -
+2023-03-10 10:51:55.502 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.form.js - -
+2023-03-10 10:51:55.506 +08:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2023-03-10 10:51:55.506 +08:00 [INF] The file /css/site.css was not modified
+2023-03-10 10:51:55.506 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-03-10 10:51:55.506 +08:00 [INF] The file /js/alertify.min.js was not modified
+2023-03-10 10:51:55.506 +08:00 [INF] The file /css/alertify.min.css was not modified
+2023-03-10 10:51:55.506 +08:00 [INF] The file /css/toastr.min.css was not modified
+2023-03-10 10:51:55.506 +08:00 [INF] The file /lib/jquery/dist/jquery.form.js was not modified
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/css/toastr.min.css - - - 304 - text/css 53.9976ms
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/js/alertify.min.js - - - 304 - application/javascript 14.7727ms
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.form.js - - - 304 - application/javascript 5.1457ms
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 28.1285ms
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/css/site.css?v=0Quh-JjKtOCMsoE-yCne7oQhAClLpmp1tRqDb1Ytll8 - - - 304 - text/css 53.8975ms
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/css/alertify.min.css - - - 304 - text/css 38.1376ms
+2023-03-10 10:51:55.508 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 51.1129ms
+2023-03-10 10:51:55.508 +08:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2023-03-10 10:51:55.509 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - application/javascript 3.2557ms
+2023-03-10 10:51:55.511 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 57.1228ms
+2023-03-10 10:51:55.528 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - -
+2023-03-10 10:51:55.528 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery-validation/dist/jquery.validate.min.js - -
+2023-03-10 10:51:55.528 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/js/site.js?v=VkC_DMsIWUQpMBKir1GdpDZYc-ru6OM21nwS5cJwp4M - -
+2023-03-10 10:51:55.528 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.min.js - -
+2023-03-10 10:51:55.529 +08:00 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2023-03-10 10:51:55.529 +08:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2023-03-10 10:51:55.529 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - - - 304 - application/javascript 1.3942ms
+2023-03-10 10:51:55.529 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery-validation/dist/jquery.validate.min.js - - - 304 - application/javascript 1.5311ms
+2023-03-10 10:51:55.529 +08:00 [INF] The file /js/site.js was not modified
+2023-03-10 10:51:55.530 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/js/site.js?v=VkC_DMsIWUQpMBKir1GdpDZYc-ru6OM21nwS5cJwp4M - - - 304 - application/javascript 2.2139ms
+2023-03-10 10:51:55.529 +08:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-03-10 10:51:55.530 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/lib/jquery/dist/jquery.min.js - - - 304 - application/javascript 2.5415ms
+2023-03-10 10:51:55.568 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/ - - - 200 - text/html;+charset=utf-8 8544.5603ms
+2023-03-10 10:51:56.465 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-10 10:51:56.555 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.9215ms
+2023-03-10 10:51:56.794 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-10 10:51:56.884 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-10 10:51:56.884 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 90.7442ms
+2023-03-10 11:42:24.210 +08:00 [INF] Application Is Starting
+2023-03-10 11:42:25.441 +08:00 [INF] User profile is available. Using 'C:\Users\OLJ1SGH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-10 11:42:25.965 +08:00 [INF] Now listening on: https://localhost:7252
+2023-03-10 11:42:25.967 +08:00 [INF] Now listening on: http://localhost:5152
+2023-03-10 11:42:25.977 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-10 11:42:25.980 +08:00 [INF] Hosting environment: Development
+2023-03-10 11:42:25.982 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\
+2023-03-10 11:42:29.710 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/ - -
+2023-03-10 11:42:29.834 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-10 11:42:29.874 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WB.Controllers.CategoryController (WB).
+2023-03-10 11:42:30.987 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-10 11:42:33.992 +08:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-10 11:42:34.393 +08:00 [INF] Executed ViewResult - view Index executed in 3422.4998ms.
+2023-03-10 11:42:34.407 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 4531.4854ms
+2023-03-10 11:42:34.408 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-10 11:42:35.031 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/ - - - 200 - text/html;+charset=utf-8 5326.8874ms
+2023-03-10 11:42:35.564 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-10 11:42:35.564 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-10 11:42:35.567 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 3.5136ms
+2023-03-10 11:42:35.569 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 5.4779ms
+2023-03-10 11:42:35.705 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-10 11:42:35.752 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-10 11:42:35.752 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 47.3424ms
+2023-03-10 11:42:35.814 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-10 11:42:35.881 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.9404ms

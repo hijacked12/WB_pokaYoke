@@ -1,0 +1,29 @@
+2023-03-07 11:43:15.660 +08:00 [INF] User profile is available. Using 'C:\Users\OLJ1SGH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-07 11:43:16.297 +08:00 [INF] Now listening on: https://localhost:7252
+2023-03-07 11:43:16.299 +08:00 [INF] Now listening on: http://localhost:5152
+2023-03-07 11:43:16.309 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-07 11:43:16.313 +08:00 [INF] Hosting environment: Development
+2023-03-07 11:43:16.315 +08:00 [INF] Content root path: C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\
+2023-03-07 11:43:20.420 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/ - -
+2023-03-07 11:43:20.644 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-07 11:43:20.726 +08:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WB.Controllers.CategoryController (WB).
+2023-03-07 11:43:22.295 +08:00 [INF] Executing ViewResult, running view Index.
+2023-03-07 11:43:25.453 +08:00 [INF] Executed DbCommand (76ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[ChangeNumber], [c].[ComponentDescription], [c].[ComponentNumber], [c].[CreateDateTime], [c].[MaterialNumber], [c].[Quantity]
+FROM [Categories1] AS [c]
+2023-03-07 11:43:25.873 +08:00 [INF] Executed ViewResult - view Index executed in 3589.907ms.
+2023-03-07 11:43:25.886 +08:00 [INF] Executed action WB.Controllers.CategoryController.Index (WB) in 5158.668ms
+2023-03-07 11:43:25.887 +08:00 [INF] Executed endpoint 'WB.Controllers.CategoryController.Index (WB)'
+2023-03-07 11:43:25.963 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - -
+2023-03-07 11:43:25.964 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/WA3.styles.css - -
+2023-03-07 11:43:25.979 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/WA3.styles.css - - - 404 0 - 13.3145ms
+2023-03-07 11:43:25.980 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 18.1382ms
+2023-03-07 11:43:26.021 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/ - - - 200 - text/html;+charset=utf-8 5614.7453ms
+2023-03-07 11:43:26.523 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7252/_vs/browserLink - -
+2023-03-07 11:43:26.584 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7252/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.0107ms
+2023-03-07 11:43:26.719 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-07 11:43:26.806 +08:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: 'C:\Users\OLJ1SGH\Desktop\New folder\WB\WB\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map'
+2023-03-07 11:43:26.807 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7252/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 200 327261 text/plain 87.5136ms
+2023-03-07 11:43:56.904 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7252/Category/Line_No application/x-www-form-urlencoded;+charset=UTF-8 3
+2023-03-07 11:43:56.909 +08:00 [INF] Executing endpoint 'WB.Controllers.CategoryController.Line_No (WB)'
+2023-03-07 11:43:56.938 +08:00 [INF] Route matched with {action = "Line_No", controller = "Category"}. Executing controller action with signature System.Action Line_No(WB.Models.SetVal) on controller WB.Controllers.CategoryController (WB).
